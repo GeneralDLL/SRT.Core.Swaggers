@@ -1,0 +1,16 @@
+---
+description: SRT.Core.Swaggers — follow package AI_RULES for Swagger plugin
+alwaysApply: false
+globs: "**/SRT.Core.Swaggers/**/*","**/docs/SRT.Core.Swaggers.*"
+---
+
+# SRT.Core.Swaggers (Cursor rule template)
+
+Copy to `.cursor/rules/SRT.Core.Swaggers.CURSOR_RULE.mdc`.
+
+Follow `docs/SRT.Core.Swaggers.AI_RULES.md`.
+
+- Do not register Swagger in `Program.cs`
+- `IHasSwaggerConfig` + non-null `SwaggerConfig` requests this plugin
+- Production hides UI unless `SwaggerInProduction`
+- `RoutePrefix` true (default) uses default swagger path; false → UI at `/`
